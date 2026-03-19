@@ -1,0 +1,403 @@
+<?xml version="1.0"?>
+<dumps language="c">
+  <platform name="unspecified" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c"/>
+    <file index="1" name="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h"/>
+    <tok fileIndex="0" linenr="1" column="1" str="#"/>
+    <tok fileIndex="0" linenr="1" column="2" str="include"/>
+    <tok fileIndex="0" linenr="1" column="10" str="&lt;dynlist.h&gt;"/>
+    <tok fileIndex="0" linenr="2" column="1" str="#"/>
+    <tok fileIndex="0" linenr="2" column="2" str="include"/>
+    <tok fileIndex="0" linenr="2" column="10" str="&lt;stdio.h&gt;"/>
+    <tok fileIndex="0" linenr="4" column="1" str="static"/>
+    <tok fileIndex="0" linenr="4" column="8" str="void"/>
+    <tok fileIndex="0" linenr="4" column="13" str="handle_item_puts"/>
+    <tok fileIndex="0" linenr="4" column="29" str="("/>
+    <tok fileIndex="0" linenr="4" column="30" str="void"/>
+    <tok fileIndex="0" linenr="4" column="35" str="*"/>
+    <tok fileIndex="0" linenr="4" column="36" str="val"/>
+    <tok fileIndex="0" linenr="4" column="39" str=")"/>
+    <tok fileIndex="0" linenr="4" column="41" str="{"/>
+    <tok fileIndex="0" linenr="5" column="5" str="puts"/>
+    <tok fileIndex="0" linenr="5" column="9" str="("/>
+    <tok fileIndex="0" linenr="5" column="10" str="("/>
+    <tok fileIndex="0" linenr="5" column="11" str="const"/>
+    <tok fileIndex="0" linenr="5" column="17" str="char"/>
+    <tok fileIndex="0" linenr="5" column="22" str="*"/>
+    <tok fileIndex="0" linenr="5" column="23" str=")"/>
+    <tok fileIndex="0" linenr="5" column="24" str="val"/>
+    <tok fileIndex="0" linenr="5" column="27" str=")"/>
+    <tok fileIndex="0" linenr="5" column="28" str=";"/>
+    <tok fileIndex="0" linenr="6" column="1" str="}"/>
+    <tok fileIndex="0" linenr="8" column="1" str="int"/>
+    <tok fileIndex="0" linenr="8" column="5" str="main"/>
+    <tok fileIndex="0" linenr="8" column="9" str="("/>
+    <tok fileIndex="0" linenr="8" column="10" str=")"/>
+    <tok fileIndex="0" linenr="8" column="12" str="{"/>
+    <tok fileIndex="0" linenr="9" column="5" str="Dynlist"/>
+    <tok fileIndex="0" linenr="9" column="13" str="list"/>
+    <tok fileIndex="0" linenr="9" column="18" str="="/>
+    <tok fileIndex="0" linenr="9" column="20" str="dynlist_new"/>
+    <tok fileIndex="0" linenr="9" column="31" str="("/>
+    <tok fileIndex="0" linenr="9" column="32" str="NULL"/>
+    <tok fileIndex="0" linenr="9" column="36" str=")"/>
+    <tok fileIndex="0" linenr="9" column="37" str=";"/>
+    <tok fileIndex="0" linenr="10" column="5" str="dynlist_append"/>
+    <tok fileIndex="0" linenr="10" column="19" str="("/>
+    <tok fileIndex="0" linenr="10" column="20" str="list"/>
+    <tok fileIndex="0" linenr="10" column="24" str=","/>
+    <tok fileIndex="0" linenr="10" column="26" str="u8&quot;xxxxxxxxxxxx xxxxxxxx!&quot;"/>
+    <tok fileIndex="0" linenr="10" column="52" str=")"/>
+    <tok fileIndex="0" linenr="10" column="53" str=";"/>
+    <tok fileIndex="0" linenr="11" column="5" str="dynlist_prepend"/>
+    <tok fileIndex="0" linenr="11" column="20" str="("/>
+    <tok fileIndex="0" linenr="11" column="21" str="list"/>
+    <tok fileIndex="0" linenr="11" column="25" str=","/>
+    <tok fileIndex="0" linenr="11" column="26" str="u8&quot;xxxxxxxxxxxx xxxxxxxxxxxxxx: &quot;"/>
+    <tok fileIndex="0" linenr="11" column="59" str=")"/>
+    <tok fileIndex="0" linenr="11" column="60" str=";"/>
+    <tok fileIndex="0" linenr="12" column="5" str="dynlist_foreach"/>
+    <tok fileIndex="0" linenr="12" column="20" str="("/>
+    <tok fileIndex="0" linenr="12" column="21" str="list"/>
+    <tok fileIndex="0" linenr="12" column="25" str=","/>
+    <tok fileIndex="0" linenr="12" column="27" str="handle_item_puts"/>
+    <tok fileIndex="0" linenr="12" column="43" str=")"/>
+    <tok fileIndex="0" linenr="12" column="44" str=";"/>
+    <tok fileIndex="0" linenr="13" column="5" str="dynlist_free"/>
+    <tok fileIndex="0" linenr="13" column="17" str="("/>
+    <tok fileIndex="0" linenr="13" column="18" str="list"/>
+    <tok fileIndex="0" linenr="13" column="22" str=")"/>
+    <tok fileIndex="0" linenr="13" column="23" str=";"/>
+    <tok fileIndex="0" linenr="14" column="1" str="}"/>
+  </rawtokens>
+  <suppressions>
+    <suppression errorId="unusedFunction" />
+    <suppression errorId="unmatchedSuppression" />
+  </suppressions>
+<dump cfg="PLATFORMIO=60118;__PLATFORMIO_BUILD_DEBUG__=1;__DBL_MIN_EXP__=(-1021);__LDBL_MANT_DIG__=64;__UINT_LEAST16_MAX__=0xffff;__FLT16_HAS_QUIET_NAN__=1;__ATOMIC_ACQUIRE=2;__WCHAR_MAX__=0xffff;__FLT128_MAX_10_EXP__=4932;__FLT_MIN__=1.17549435082228750796873653722224568e-38F;__GCC_IEC_559_COMPLEX=2;__UINT_LEAST8_TYPE__=unsigned char;__SIZEOF_FLOAT80__=12;__BFLT16_DENORM_MIN__=9.18354961579912115600575419704879436e-41BF16;__INTMAX_C(c)=c ## LL;__CHAR_BIT__=8;__MINGW32__=1;__UINT8_MAX__=0xff;__SCHAR_WIDTH__=8;__WINT_MAX__=0xffff;__FLT32_MIN_EXP__=(-125);__BFLT16_NORM_MAX__=3.38953138925153547590470800371487867e+38BF16;__BFLT16_MIN_10_EXP__=(-37);__ORDER_LITTLE_ENDIAN__=1234;__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2=1;__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4=1;__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8=1;__GCC_ATOMIC_CHAR_LOCK_FREE=2;__GCC_IEC_559=2;__FLT32X_DECIMAL_DIG__=17;__FLT_EVAL_METHOD__=2;__FLT64_DECIMAL_DIG__=17;__GCC_ATOMIC_CHAR32_T_LOCK_FREE=2;__UINT_FAST64_MAX__=0xffffffffffffffffULL;__SIG_ATOMIC_TYPE__=int;__DBL_MIN_10_EXP__=(-307);__FINITE_MATH_ONLY__=0;__FLT32X_MAX_EXP__=1024;__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1=1;__FLT32_HAS_DENORM__=1;__UINT_FAST8_MAX__=0xff;__FLT32_MAX_10_EXP__=38;__DEC64_MAX_EXP__=385;__pentium4=1;__INT8_C(c)=c;__INT_LEAST8_WIDTH__=8;__UINT_LEAST64_MAX__=0xffffffffffffffffULL;__SHRT_MAX__=0x7fff;__LDBL_MAX__=1.18973149535723176502126385303097021e+4932L;__FLT64X_MAX_10_EXP__=4932;__BFLT16_MAX_10_EXP__=38;__BFLT16_MAX_EXP__=128;__LDBL_IS_IEC_60559__=1;__pentium4__=1;__FLT64X_HAS_QUIET_NAN__=1;__UINT_LEAST8_MAX__=0xff;__GCC_ATOMIC_BOOL_LOCK_FREE=2;__LAHF_SAHF__=1;__FLT128_DENORM_MIN__=6.47517511943802511092443895822764655e-4966F128;__UINTMAX_TYPE__=long long unsigned int;__BFLT16_DECIMAL_DIG__=4;__DEC32_EPSILON__=1E-6DF;__FLT_EVAL_METHOD_TS_18661_3__=2;__UINT32_MAX__=0xffffffffU;__DBL_DENORM_MIN__=((double)4.94065645841246544176568792868221372e-324L);__FLT128_MIN_EXP__=(-16381);__DEC64X_MAX_EXP__=6145;__WINT_MIN__=0;__FLT128_MIN_10_EXP__=(-4931);__FLT32X_IS_IEC_60559__=1;__INT_LEAST16_WIDTH__=16;__SCHAR_MAX__=0x7f;__FLT128_MANT_DIG__=113;__WCHAR_MIN__=0;__INT64_C(c)=c ## LL;__GCC_ATOMIC_POINTER_LOCK_FREE=2;__ATOMIC_SEQ_CST=5;__INT_LEAST64_MAX__=0x7fffffffffffffffLL;__FLT32X_MANT_DIG__=53;__FLT64X_EPSILON__=1.08420217248550443400745280086994171e-19F64x;__STDC_HOSTED__=1;__DEC64_MIN_EXP__=(-382);__DBL_DIG__=15;__STDC_EMBED_EMPTY__=2;__FLT_EPSILON__=1.19209289550781250000000000000000000e-7F;__SHRT_WIDTH__=16;__FLT32_IS_IEC_60559__=1;__LDBL_MIN__=3.36210314311209350626267781732175260e-4932L;__STDC_UTF_16__=1;__DBL_IS_IEC_60559__=1;__DEC32_MAX__=9.999999E96DF;__FLT64X_DENORM_MIN__=3.64519953188247460252840593361941982e-4951F64x;__FLT32X_HAS_INFINITY__=1;__INT_WIDTH__=32;__DECIMAL_DIG__=21;__FLT64_EPSILON__=2.22044604925031308084726333618164062e-16F64;__FLT64X_MIN_10_EXP__=(-4931);__LDBL_HAS_QUIET_NAN__=1;__FLT16_MIN_EXP__=(-13);__FLT64_MANT_DIG__=53;_REENTRANT=1;__FLT64X_MANT_DIG__=64;__BFLT16_DIG__=2;__GNUC__=15;__MMX__=1;__FLT_HAS_DENORM__=1;__SIZEOF_LONG_DOUBLE__=12;__LDBL_DIG__=18;__BIGGEST_ALIGNMENT__=16;__SIZE_TYPE__=unsigned int;__FLT64_MAX_10_EXP__=308;__BFLT16_IS_IEC_60559__=0;__FLT16_MAX_10_EXP__=4;__DBL_MAX__=((double)1.79769313486231570814527423731704357e+308L);__INT_FAST32_MAX__=0x7fffffff;__DBL_HAS_INFINITY__=1;__INT64_MAX__=0x7fffffffffffffffLL;__SIZEOF_FLOAT__=4;__WINNT__=1;__HAVE_SPECULATION_SAFE_VALUE=1;__DEC32_MIN_EXP__=(-94);__INTPTR_WIDTH__=32;__UINT_LEAST32_MAX__=0xffffffffU;__FLT32X_HAS_DENORM__=1;__INT_FAST16_TYPE__=short int;__STRICT_ANSI__=1;__LDBL_HAS_DENORM__=1;__SEG_GS=1;__BFLT16_EPSILON__=7.81250000000000000000000000000000000e-3BF16;__FLT128_HAS_INFINITY__=1;__DEC32_MIN__=1E-95DF;__DBL_MAX_EXP__=1024;__WCHAR_WIDTH__=16;__FLT32_MAX__=3.40282346638528859811704183484516925e+38F32;__DEC128_EPSILON__=1E-33DL;__FLT16_DECIMAL_DIG__=5;__ATOMIC_HLE_RELEASE=131072;__WIN32__=1;__PTRDIFF_MAX__=0x7fffffff;__DEC64X_MAX__=9.999999999999999999999999999999999E6144D64x;__ATOMIC_HLE_ACQUIRE=65536;__LONG_LONG_MAX__=0x7fffffffffffffffLL;__SIZEOF_SIZE_T__=4;__BFLT16_HAS_INFINITY__=1;__FLT64X_MIN_EXP__=(-16381);__SIZEOF_WINT_T__=2;__LONG_LONG_WIDTH__=64;__FLT32_MAX_EXP__=128;__GXX_ABI_VERSION=1020;__FLT_MIN_EXP__=(-125);__GCC_HAVE_DWARF2_CFI_ASM=1;__INT16_MAX__=0x7fff;__INT_FAST64_TYPE__=long long int;__BFLT16_MAX__=3.38953138925153547590470800371487867e+38BF16;__BFLT16_HAS_DENORM__=1;__FLT64_DENORM_MIN__=4.94065645841246544176568792868221372e-324F64;__FLT16_DENORM_MIN__=5.96046447753906250000000000000000000e-8F16;__FLT128_EPSILON__=1.92592994438723585305597794258492732e-34F128;__FLT64X_NORM_MAX__=1.18973149535723176502126385303097021e+4932F64x;__SIZEOF_POINTER__=4;__DBL_HAS_QUIET_NAN__=1;__FLT32X_EPSILON__=2.22044604925031308084726333618164062e-16F32x;__LDBL_MAX_EXP__=16384;__DECIMAL_BID_FORMAT__=1;__FLT64_MIN_EXP__=(-1021);__GXX_TYPEINFO_EQUALITY_INLINE=0;__FLT64_MIN_10_EXP__=(-307);__FLT16_MIN_10_EXP__=(-4);__FLT64X_DECIMAL_DIG__=21;__DEC128_MIN__=1E-6143DL;__REGISTER_PREFIX__=1;__UINT16_MAX__=0xffff;__DBL_HAS_DENORM__=1;__FLT32_MIN__=1.17549435082228750796873653722224568e-38F32;__UINT8_TYPE__=unsigned char;__FLT_DIG__=6;__NO_INLINE__=1;__DEC_EVAL_METHOD__=2;__i386=1;__FLT_MANT_DIG__=24;__LDBL_DECIMAL_DIG__=21;__VERSION__=&quot;15.2.0&quot;;__UINT64_C(c)=c ## ULL;__DEC64X_MIN__=1E-6143D64x;_WIN32=1;__INT_LEAST32_MAX__=0x7fffffff;__GCC_ATOMIC_INT_LOCK_FREE=2;__FLT128_MAX_EXP__=16384;__FLT32_MANT_DIG__=24;_X86_=1;__FLOAT_WORD_ORDER__=__ORDER_LITTLE_ENDIAN__;__FLT32X_MIN_EXP__=(-1021);__BFLT16_MIN__=1.17549435082228750796873653722224568e-38BF16;__FLT128_HAS_DENORM__=1;__FLT32_DECIMAL_DIG__=9;__FLT128_DIG__=33;_INTEGRAL_MAX_BITS=64;__INT32_C(c)=c;__DEC64_EPSILON__=1E-15DD;__ORDER_PDP_ENDIAN__=3412;__DEC128_MIN_EXP__=(-6142);__code_model_32__=1;__DEC128_MAX__=9.999999999999999999999999999999999E6144DL;__INT_FAST32_TYPE__=int;__UINT_LEAST16_TYPE__=short unsigned int;__DEC64X_MANT_DIG__=34;__DEC128_MAX_EXP__=6145;__i386__=1;__UINT64_MAX__=0xffffffffffffffffULL;__FLT_IS_IEC_60559__=1;__GNUC_WIDE_EXECUTION_CHARSET_NAME=&quot;UTF-16LE&quot;;__cdecl=__attribute__((__cdecl__));__FLT64X_DIG__=18;__INT8_TYPE__=signed char;__GCC_ASM_FLAG_OUTPUTS__=1;__UINT32_TYPE__=unsigned int;__BFLT16_HAS_QUIET_NAN__=1;__FLT_RADIX__=2;__INT_LEAST16_TYPE__=short int;__LDBL_EPSILON__=1.08420217248550443400745280086994171e-19L;__UINTMAX_C(c)=c ## ULL;__DEC64X_EPSILON__=1E-33D64x;__FLT16_DIG__=3;__FLT32X_MIN__=2.22507385850720138309023271733240406e-308F32x;__SIG_ATOMIC_MAX__=0x7fffffff;__GCC_ATOMIC_WCHAR_T_LOCK_FREE=2;__USER_LABEL_PREFIX__=_;__SIZEOF_PTRDIFF_T__=4;__FLT64X_HAS_INFINITY__=1;__SIZEOF_LONG__=4;__FLT64_IS_IEC_60559__=1;__FLT16_IS_IEC_60559__=1;__FLT16_MAX_EXP__=16;__DEC32_SUBNORMAL_MIN__=0.000001E-95DF;__STDC_EMBED_FOUND__=1;__MSVCRT__=1;__INT_FAST16_MAX__=0x7fff;__GCC_CONSTRUCTIVE_SIZE=64;__FLT64_DIG__=15;__UINT_FAST32_MAX__=0xffffffffU;__UINT_LEAST64_TYPE__=long long unsigned int;__FLT16_EPSILON__=9.76562500000000000000000000000000000e-4F16;__ILP32__=1;__FLT_HAS_QUIET_NAN__=1;__FLT_MAX_10_EXP__=38;__LONG_MAX__=0x7fffffffL;__FLT64X_HAS_DENORM__=1;__DEC128_SUBNORMAL_MIN__=0.000000000000000000000000000000001E-6143DL;__FLT_HAS_INFINITY__=1;__GNUC_EXECUTION_CHARSET_NAME=&quot;UTF-8&quot;;_ILP32=1;__UINT_FAST16_TYPE__=short unsigned int;__DEC64_MAX__=9.999999999999999E384DD;__STDC_EMBED_NOT_FOUND__=0;__INT_FAST32_WIDTH__=32;__CHAR16_TYPE__=short unsigned int;__PRAGMA_REDEFINE_EXTNAME=1;__DEC64X_SUBNORMAL_MIN__=0.000000000000000000000000000000001E-6143D64x;__SIZE_WIDTH__=32;__SEG_FS=1;__BITINT_MAXWIDTH__=65535;__INT_LEAST16_MAX__=0x7fff;__FLT16_NORM_MAX__=6.55040000000000000000000000000000000e+4F16;__DEC64_MANT_DIG__=16;__FLT32_DENORM_MIN__=1.40129846432481707092372958328991613e-45F32;__SIG_ATOMIC_WIDTH__=32;__INT_LEAST64_TYPE__=long long int;__INT16_TYPE__=short int;__INT_LEAST8_TYPE__=signed char;__FLT16_MAX__=6.55040000000000000000000000000000000e+4F16;__FLT128_MIN__=3.36210314311209350626267781732175260e-4932F128;__STDC_VERSION__=201112L;__SIZEOF_INT__=4;__DEC32_MAX_EXP__=97;__INT_FAST8_MAX__=0x7f;__FLT128_MAX__=1.18973149535723176508575932662800702e+4932F128;__INTPTR_MAX__=0x7fffffff;__FLT64_HAS_QUIET_NAN__=1;__stdcall=__attribute__((__stdcall__));__FLT32_MIN_10_EXP__=(-37);__FLT32X_DIG__=15;__GXX_MERGED_TYPEINFO_NAMES=0;__UINT16_C(c)=c;__PTRDIFF_WIDTH__=32;__INT_FAST16_WIDTH__=16;__FLT64_HAS_INFINITY__=1;__FLT64X_MAX__=1.18973149535723176502126385303097021e+4932F64x;__FLT16_HAS_INFINITY__=1;__SIG_ATOMIC_MIN__=(-__SIG_ATOMIC_MAX__ - 1);__GCC_ATOMIC_LONG_LOCK_FREE=2;__DEC32_MANT_DIG__=7;__FLT16_MANT_DIG__=11;__INTPTR_TYPE__=int;__UINT16_TYPE__=short unsigned int;__WCHAR_TYPE__=short unsigned int;__UINTPTR_MAX__=0xffffffffU;__INT_FAST64_WIDTH__=64;__LDBL_HAS_INFINITY__=1;__INT_FAST64_MAX__=0x7fffffffffffffffLL;__GCC_ATOMIC_TEST_AND_SET_TRUEVAL=1;__FLT_NORM_MAX__=3.40282346638528859811704183484516925e+38F;__FLT32_HAS_INFINITY__=1;__FLT64X_MAX_EXP__=16384;__UINT_FAST64_TYPE__=long long unsigned int;__BFLT16_MIN_EXP__=(-125);__INT_MAX__=0x7fffffff;__INT64_TYPE__=long long int;__FLT_MAX_EXP__=128;__DBL_MANT_DIG__=53;__SIZEOF_FLOAT128__=16;__BFLT16_MANT_DIG__=8;__GCC_ATOMIC_CHAR16_T_LOCK_FREE=2;__DEC64_MIN__=1E-383DD;__WINT_TYPE__=short unsigned int;__UINT_LEAST32_TYPE__=unsigned int;__SIZEOF_SHORT__=2;__FLT32_NORM_MAX__=3.40282346638528859811704183484516925e+38F32;__SSE__=1;__LDBL_MIN_EXP__=(-16381);__FLT64_MAX__=1.79769313486231570814527423731704357e+308F64;__DEC64X_MIN_EXP__=(-6142);__WINT_WIDTH__=16;__INT_LEAST8_MAX__=0x7f;__INT_LEAST64_WIDTH__=64;__FLT32X_MAX_10_EXP__=308;__WIN32=1;__FLT16_MIN__=6.10351562500000000000000000000000000e-5F16;__FLT64X_IS_IEC_60559__=1;__LDBL_MAX_10_EXP__=4932;__ATOMIC_RELAXED=0;__DBL_EPSILON__=((double)2.22044604925031308084726333618164062e-16L);__INT_LEAST32_TYPE__=int;__thiscall=__attribute__((__thiscall__));__UINT8_C(c)=c;__FLT64_MAX_EXP__=1024;__SIZEOF_WCHAR_T__=2;__UINT64_TYPE__=long long unsigned int;__GNUC_PATCHLEVEL__=0;__WINNT=1;__FLT128_NORM_MAX__=1.18973149535723176508575932662800702e+4932F128;__FLT64_NORM_MAX__=1.79769313486231570814527423731704357e+308F64;__FLT128_HAS_QUIET_NAN__=1;__INTMAX_MAX__=0x7fffffffffffffffLL;__INT_FAST8_TYPE__=signed char;__fastcall=__attribute__((__fastcall__));__FLT64X_MIN__=3.36210314311209350626267781732175260e-4932F64x;__GNUC_STDC_INLINE__=1;__FLT64_HAS_DENORM__=1;__FLT32_EPSILON__=1.19209289550781250000000000000000000e-7F32;__FLT16_HAS_DENORM__=1;__DBL_DECIMAL_DIG__=17;__STDC_UTF_32__=1;__INT_FAST8_WIDTH__=8;__FXSR__=1;__FLT32X_MAX__=1.79769313486231570814527423731704357e+308F32x;__DBL_NORM_MAX__=((double)1.79769313486231570814527423731704357e+308L);__BYTE_ORDER__=__ORDER_LITTLE_ENDIAN__;__GCC_DESTRUCTIVE_SIZE=64;__INTMAX_WIDTH__=64;__ORDER_BIG_ENDIAN__=4321;__FLT32_DIG__=6;__UINT32_C(c)=c ## U;__FLT_DENORM_MIN__=1.40129846432481707092372958328991613e-45F;__FLT128_IS_IEC_60559__=1;__INT8_MAX__=0x7f;__LONG_WIDTH__=32;__DBL_MIN__=((double)2.22507385850720138309023271733240406e-308L);__INT32_MAX__=0x7fffffff;__UINT_FAST32_TYPE__=unsigned int;__FLT32X_NORM_MAX__=1.79769313486231570814527423731704357e+308F32x;__CHAR32_TYPE__=unsigned int;__FLT_MAX__=3.40282346638528859811704183484516925e+38F;__SSE2__=1;__INT32_TYPE__=int;__SIZEOF_DOUBLE__=8;__FLT_MIN_10_EXP__=(-37);__FLT64_MIN__=2.22507385850720138309023271733240406e-308F64;__INT_LEAST32_WIDTH__=32;__INTMAX_TYPE__=long long int;__FLT32X_HAS_QUIET_NAN__=1;__ATOMIC_CONSUME=1;__GNUC_MINOR__=2;__UINTMAX_MAX__=0xffffffffffffffffULL;__FLT32X_DENORM_MIN__=4.94065645841246544176568792868221372e-324F32x;__DBL_MAX_10_EXP__=308;__LDBL_DENORM_MIN__=3.64519953188247460252840593361941982e-4951L;__INT16_C(c)=c;__ATOMIC_RELEASE=3;__STDC__=1;__PTRDIFF_TYPE__=int;__FLT32X_MIN_10_EXP__=(-307);__UINTPTR_TYPE__=unsigned int;__DEC64_SUBNORMAL_MIN__=0.000000000000001E-383DD;__DEC128_MANT_DIG__=34;__LDBL_MIN_10_EXP__=(-4931);__SIZEOF_LONG_LONG__=8;__FLT128_DECIMAL_DIG__=36;__GCC_ATOMIC_LLONG_LOCK_FREE=2;__USING_POSIXTHREAD__=1;__FLT32_HAS_QUIET_NAN__=1;__FLT_DECIMAL_DIG__=9;__UINT_FAST16_MAX__=0xffff;__LDBL_NORM_MAX__=1.18973149535723176502126385303097021e+4932L;__GCC_ATOMIC_SHORT_LOCK_FREE=2;__SIZE_MAX__=0xffffffffU;__UINT_FAST8_TYPE__=unsigned char;__ATOMIC_ACQ_REL=4;__declspec(x)=__attribute__((x))">
+  <standards>
+    <c version="c11"/>
+    <cpp version="c++23"/>
+  </standards>
+  <directivelist>
+    <directive file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="1" str="#include &lt;dynlist.h&gt;"/>
+    <directive file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="2" str="#include &lt;stdio.h&gt;"/>
+    <directive file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="1" str="#pragma once"/>
+    <directive file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="2" str="#ifdef __cplusplus"/>
+    <directive file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="4" str="#endif"/>
+    <directive file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="24" str="#ifdef __cplusplus"/>
+    <directive file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="26" str="#endif"/>
+  </directivelist>
+  <tokenlist>
+    <token id="0x2ad2f10" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="37" str="struct" scope="0x2ac70f0" type="name"/>
+    <token id="0x2c6a4d0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="37" str="DynlistDescriptor" scope="0x2ac70f0" type="name"/>
+    <token id="0x2c6a950" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="37" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true"/>
+    <token id="0x2ab35e0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="45" str="dynlist_new" scope="0x2ac70f0" type="name" function="0xaf8e20"/>
+    <token id="0x2ab3700" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="56" str="(" scope="0x2ac70f0" link="0x2ab3340" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2ab3d00" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="57" str="void" scope="0x2ac70f0" type="name"/>
+    <token id="0x2c6a6b0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="57" str="(" scope="0x2ac70f0" link="0x2c6aad0" valueType-type="void" valueType-reference="None"/>
+    <token id="0x2c6a830" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="57" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true"/>
+    <token id="0x2ab3d60" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="77" str="clean_val_func" scope="0x2ac70f0" type="name" varId="1" exprId="1" variable="0x2c6eba0" valueType-type="void" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2c6aad0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="77" str=")" scope="0x2ac70f0" link="0x2c6a6b0"/>
+    <token id="0x2c6a170" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="77" str="(" scope="0x2ac70f0" link="0x2c6a590"/>
+    <token id="0x2c69ff0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="77" str="void" scope="0x2ac70f0" type="name"/>
+    <token id="0x2c6ab30" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="77" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true"/>
+    <token id="0x2c6a590" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="77" str=")" scope="0x2ac70f0" link="0x2c6a170"/>
+    <token id="0x2ab3340" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="91" str=")" scope="0x2ac70f0" link="0x2ab3700"/>
+    <token id="0x2ab3460" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="10" column="92" str=";" scope="0x2ac70f0"/>
+    <token id="0x2ab31c0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="11" column="37" str="void" scope="0x2ac70f0" type="name"/>
+    <token id="0x2ab3520" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="11" column="41" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true"/>
+    <token id="0x2ab3940" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="11" column="43" str="dynlist_poplast" scope="0x2ac70f0" type="name" function="0xafa720"/>
+    <token id="0x2ab3a00" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="11" column="58" str="(" scope="0x2ac70f0" link="0x2ab3760" valueType-type="void" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2ab3b80" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="11" column="59" str="struct" scope="0x2ac70f0" type="name"/>
+    <token id="0x2c6ac50" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="11" column="59" str="DynlistDescriptor" scope="0x2ac70f0" type="name" astParent="0x2c6ad10"/>
+    <token id="0x2c6ad10" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="11" column="59" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true" astOperand1="0x2c6ac50" astOperand2="0x2ab3dc0"/>
+    <token id="0x2ab3dc0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="11" column="67" str="list" scope="0x2ac70f0" type="name" varId="2" exprId="2" variable="0x2c6e600" astParent="0x2c6ad10" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2ab3760" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="11" column="71" str=")" scope="0x2ac70f0" link="0x2ab3a00"/>
+    <token id="0x2ab3e20" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="11" column="72" str=";" scope="0x2ac70f0"/>
+    <token id="0x2ab3a60" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="12" column="1" str="void" scope="0x2ac70f0" type="name"/>
+    <token id="0x2ab32e0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="12" column="6" str="dynlist_free" scope="0x2ac70f0" type="name" function="0xaf8c40"/>
+    <token id="0x2ab3820" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="12" column="18" str="(" scope="0x2ac70f0" link="0x2ab3580" valueType-type="void" valueType-reference="None"/>
+    <token id="0x2ab34c0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="12" column="19" str="struct" scope="0x2ac70f0" type="name"/>
+    <token id="0x2c6ae90" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="12" column="19" str="DynlistDescriptor" scope="0x2ac70f0" type="name" astParent="0x2c6ad70"/>
+    <token id="0x2c6ad70" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="12" column="19" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true" astOperand1="0x2c6ae90" astOperand2="0x2ab33a0"/>
+    <token id="0x2ab33a0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="12" column="27" str="plist" scope="0x2ac70f0" type="name" varId="3" exprId="3" variable="0x2c6e180" astParent="0x2c6ad70" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2ab3580" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="12" column="32" str=")" scope="0x2ac70f0" link="0x2ab3820"/>
+    <token id="0x2ab3880" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="12" column="33" str=";" scope="0x2ac70f0"/>
+    <token id="0x2ab3be0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="13" column="1" str="void" scope="0x2ac70f0" type="name"/>
+    <token id="0x2ab3e80" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="13" column="6" str="dynlist_append" scope="0x2ac70f0" type="name" function="0xafa5e0"/>
+    <token id="0x2ab3c40" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="13" column="20" str="(" scope="0x2ac70f0" link="0x2ab37c0" valueType-type="void" valueType-reference="None"/>
+    <token id="0x2ab3160" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="13" column="21" str="struct" scope="0x2ac70f0" type="name"/>
+    <token id="0x2c6a5f0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="13" column="21" str="DynlistDescriptor" scope="0x2ac70f0" type="name" astParent="0x2c6add0"/>
+    <token id="0x2c6add0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="13" column="21" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true" astParent="0x2ab3fa0" astOperand1="0x2c6a5f0" astOperand2="0x2ab3f40"/>
+    <token id="0x2ab3f40" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="13" column="29" str="list" scope="0x2ac70f0" type="name" varId="4" exprId="4" variable="0x2afeb30" astParent="0x2c6add0" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2ab3fa0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="13" column="33" str="," scope="0x2ac70f0" astOperand1="0x2c6add0" astOperand2="0x2ab3640"/>
+    <token id="0x2ab3ca0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="13" column="35" str="void" scope="0x2ac70f0" type="name" astParent="0x2ab3640"/>
+    <token id="0x2ab3640" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="13" column="40" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true" astParent="0x2ab3fa0" astOperand1="0x2ab3ca0" astOperand2="0x2ab4000"/>
+    <token id="0x2ab4000" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="13" column="41" str="value" scope="0x2ac70f0" type="name" varId="5" exprId="5" variable="0x2afeb88" astParent="0x2ab3640" valueType-type="void" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2ab37c0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="13" column="46" str=")" scope="0x2ac70f0" link="0x2ab3c40"/>
+    <token id="0x2ab3100" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="13" column="47" str=";" scope="0x2ac70f0"/>
+    <token id="0x2ab3280" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="14" column="1" str="void" scope="0x2ac70f0" type="name"/>
+    <token id="0x2ab3400" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="14" column="6" str="dynlist_prepend" scope="0x2ac70f0" type="name" function="0xafab80"/>
+    <token id="0x2ab36a0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="14" column="21" str="(" scope="0x2ac70f0" link="0x2adb330" valueType-type="void" valueType-reference="None"/>
+    <token id="0x2adb1b0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="14" column="22" str="struct" scope="0x2ac70f0" type="name"/>
+    <token id="0x2c6a8f0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="14" column="22" str="DynlistDescriptor" scope="0x2ac70f0" type="name" astParent="0x2c6ae30"/>
+    <token id="0x2c6ae30" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="14" column="22" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true" astParent="0x2adbf30" astOperand1="0x2c6a8f0" astOperand2="0x2adbe70"/>
+    <token id="0x2adbe70" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="14" column="30" str="list" scope="0x2ac70f0" type="name" varId="6" exprId="6" variable="0xabf3c0" astParent="0x2c6ae30" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2adbf30" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="14" column="34" str="," scope="0x2ac70f0" astOperand1="0x2c6ae30" astOperand2="0x2adb930"/>
+    <token id="0x2adb7b0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="14" column="36" str="void" scope="0x2ac70f0" type="name" astParent="0x2adb930"/>
+    <token id="0x2adb930" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="14" column="41" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true" astParent="0x2adbf30" astOperand1="0x2adb7b0" astOperand2="0x2adbdb0"/>
+    <token id="0x2adbdb0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="14" column="42" str="value" scope="0x2ac70f0" type="name" varId="7" exprId="7" variable="0xabf418" astParent="0x2adb930" valueType-type="void" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2adb330" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="14" column="47" str=")" scope="0x2ac70f0" link="0x2ab36a0"/>
+    <token id="0x2adbcf0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="14" column="48" str=";" scope="0x2ac70f0"/>
+    <token id="0x2adbf90" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="1" str="void" scope="0x2ac70f0" type="name"/>
+    <token id="0x2adb2d0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="6" str="dynlist_foreach" scope="0x2ac70f0" type="name" function="0xaf8ba0"/>
+    <token id="0x2adbe10" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="21" str="(" scope="0x2ac70f0" link="0x2adb630" valueType-type="void" valueType-reference="None"/>
+    <token id="0x2adbc30" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="22" str="struct" scope="0x2ac70f0" type="name"/>
+    <token id="0x2c6a050" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="22" str="DynlistDescriptor" scope="0x2ac70f0" type="name" astParent="0x2c6a1d0"/>
+    <token id="0x2c6a1d0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="22" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true" astParent="0x2adb150" astOperand1="0x2c6a050" astOperand2="0x2adb6f0"/>
+    <token id="0x2adb6f0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="30" str="list" scope="0x2ac70f0" type="name" varId="8" exprId="8" variable="0x2ac7270" astParent="0x2c6a1d0" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2adb150" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="34" str="," scope="0x2ac70f0" astOperand1="0x2c6a1d0" astOperand2="0x2ad2cd0"/>
+    <token id="0x2adbb10" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="36" str="void" scope="0x2ac70f0" type="name" astParent="0x2c6a650"/>
+    <token id="0x2c6a650" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="36" str="(" scope="0x2ac70f0" link="0x2ad2c10" astParent="0x2ad2cd0" astOperand1="0x2adbb10" astOperand2="0x2ad2bb0" valueType-type="void" valueType-reference="None"/>
+    <token id="0x2ad2bb0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="36" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true" astParent="0x2c6a650" astOperand1="0x2adb990" valueType-type="void" valueType-reference="None"/>
+    <token id="0x2adb990" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="56" str="do_func" scope="0x2ac70f0" type="name" varId="9" exprId="9" variable="0x2ac72c8" astParent="0x2ad2bb0" valueType-type="void" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2ad2c10" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="56" str=")" scope="0x2ac70f0" link="0x2c6a650"/>
+    <token id="0x2ad2cd0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="56" str="(" scope="0x2ac70f0" link="0x2ab3ee0" astParent="0x2adb150" astOperand1="0x2c6a650" astOperand2="0x2ad3090"/>
+    <token id="0x2ad3090" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="56" str="void" scope="0x2ac70f0" type="name" astParent="0x2ad2cd0"/>
+    <token id="0x2ad2190" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="56" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true"/>
+    <token id="0x2ab3ee0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="56" str=")" scope="0x2ac70f0" link="0x2ad2cd0"/>
+    <token id="0x2adb630" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="63" str=")" scope="0x2ac70f0" link="0x2adbe10"/>
+    <token id="0x2adb690" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="15" column="64" str=";" scope="0x2ac70f0"/>
+    <token id="0x2adb390" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="16" column="1" str="struct" scope="0x2ac70f0" type="name"/>
+    <token id="0x2adb9f0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="16" column="8" str="DynlistNode" scope="0x2ac70f0" type="name"/>
+    <token id="0x2adb210" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="16" column="20" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true"/>
+    <token id="0x2adbed0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="16" column="21" str="dynlist_begin" scope="0x2ac70f0" type="name" function="0xafa7c0"/>
+    <token id="0x2adb3f0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="16" column="34" str="(" scope="0x2ac70f0" link="0x2adb810" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2adba50" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="16" column="35" str="struct" scope="0x2ac70f0" type="name"/>
+    <token id="0x2ab38e0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="16" column="35" str="DynlistDescriptor" scope="0x2ac70f0" type="name" astParent="0x2ab39a0"/>
+    <token id="0x2ab39a0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="16" column="35" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true" astOperand1="0x2ab38e0" astOperand2="0x2adb750"/>
+    <token id="0x2adb750" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="16" column="43" str="list" scope="0x2ac70f0" type="name" varId="10" exprId="10" variable="0x2c6ec60" astParent="0x2ab39a0" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2adb810" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="16" column="47" str=")" scope="0x2ac70f0" link="0x2adb3f0"/>
+    <token id="0x2adbc90" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="16" column="48" str=";" scope="0x2ac70f0"/>
+    <token id="0x2adb870" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="17" column="1" str="struct" scope="0x2ac70f0" type="name"/>
+    <token id="0x2adb8d0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="17" column="8" str="DynlistNode" scope="0x2ac70f0" type="name"/>
+    <token id="0x2adbab0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="17" column="20" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true"/>
+    <token id="0x2adbd50" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="17" column="21" str="dynlist_next" scope="0x2ac70f0" type="name" function="0xafa4a0"/>
+    <token id="0x2adbff0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="17" column="33" str="(" scope="0x2ac70f0" link="0x2adbb70" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2adb0f0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="17" column="34" str="struct" scope="0x2ac70f0" type="name"/>
+    <token id="0x2adb270" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="17" column="41" str="DynlistNode" scope="0x2ac70f0" type="name" astParent="0x2adb450"/>
+    <token id="0x2adb450" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="17" column="53" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true" astOperand1="0x2adb270" astOperand2="0x2adb4b0"/>
+    <token id="0x2adb4b0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="17" column="54" str="node" scope="0x2ac70f0" type="name" varId="11" exprId="11" variable="0x2c6e660" astParent="0x2adb450" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2adbb70" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="17" column="58" str=")" scope="0x2ac70f0" link="0x2adbff0"/>
+    <token id="0x2adb510" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="17" column="59" str=";" scope="0x2ac70f0"/>
+    <token id="0x2adb570" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="18" column="1" str="void" scope="0x2ac70f0" type="name"/>
+    <token id="0x2adbbd0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="18" column="6" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true"/>
+    <token id="0x2adb5d0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="18" column="7" str="dynlist_value" scope="0x2ac70f0" type="name" function="0xaf95a0"/>
+    <token id="0x2adfdd0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="18" column="20" str="(" scope="0x2ac70f0" link="0x2adfa70" valueType-type="void" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2adf2f0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="18" column="21" str="struct" scope="0x2ac70f0" type="name"/>
+    <token id="0x2adfb90" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="18" column="28" str="DynlistNode" scope="0x2ac70f0" type="name" astParent="0x2adf770"/>
+    <token id="0x2adf770" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="18" column="40" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true" astOperand1="0x2adfb90" astOperand2="0x2adf8f0"/>
+    <token id="0x2adf8f0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="18" column="41" str="node" scope="0x2ac70f0" type="name" varId="12" exprId="12" variable="0x2c6e360" astParent="0x2adf770" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2adfa70" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="18" column="45" str=")" scope="0x2ac70f0" link="0x2adfdd0"/>
+    <token id="0x2adf7d0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="18" column="46" str=";" scope="0x2ac70f0"/>
+    <token id="0x2adf350" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="20" column="1" str="struct" scope="0x2ac70f0" type="name"/>
+    <token id="0x2ab3b20" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="20" column="1" str="DynlistDescriptor" scope="0x2ac70f0" type="name"/>
+    <token id="0x2ab3220" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="20" column="1" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true"/>
+    <token id="0x2adf830" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="20" column="15" str="istack_new" scope="0x2ac70f0" type="name" function="0xaf8740"/>
+    <token id="0x2adfa10" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="20" column="25" str="(" scope="0x2ac70f0" isRemovedVoidParameter="true" link="0x2adf950" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2adf950" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="20" column="30" str=")" scope="0x2ac70f0" link="0x2adfa10"/>
+    <token id="0x2adfe90" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="20" column="31" str=";" scope="0x2ac70f0"/>
+    <token id="0x2adfef0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="21" column="1" str="void" scope="0x2ac70f0" type="name"/>
+    <token id="0x2adf3b0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="21" column="6" str="istack_push" scope="0x2ac70f0" type="name" function="0xaf8ec0"/>
+    <token id="0x2adfad0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="21" column="17" str="(" scope="0x2ac70f0" link="0x2adf590" valueType-type="void" valueType-reference="None"/>
+    <token id="0x2adf9b0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="21" column="18" str="struct" scope="0x2ac70f0" type="name"/>
+    <token id="0x2c6aef0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="21" column="18" str="DynlistDescriptor" scope="0x2ac70f0" type="name" astParent="0x2c6ede0"/>
+    <token id="0x2c6ede0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="21" column="18" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true" astParent="0x2adfb30" astOperand1="0x2c6aef0" astOperand2="0x2adf410"/>
+    <token id="0x2adf410" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="21" column="32" str="handle" scope="0x2ac70f0" type="name" varId="13" exprId="13" variable="0x2ac7330" astParent="0x2c6ede0" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2adfb30" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="21" column="38" str="," scope="0x2ac70f0" astOperand1="0x2c6ede0" astOperand2="0x2adfbf0"/>
+    <token id="0x2adf530" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="21" column="40" str="int" scope="0x2ac70f0" type="name"/>
+    <token id="0x2adfbf0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="21" column="44" str="value" scope="0x2ac70f0" type="name" varId="14" exprId="14" variable="0x2ac7388" astParent="0x2adfb30" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="0x2adf590" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="21" column="49" str=")" scope="0x2ac70f0" link="0x2adfad0"/>
+    <token id="0x2ae0010" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="21" column="50" str=";" scope="0x2ac70f0"/>
+    <token id="0x2adfe30" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="22" column="1" str="int" scope="0x2ac70f0" type="name"/>
+    <token id="0x2adf5f0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="22" column="5" str="istack_pop" scope="0x2ac70f0" type="name" function="0xafaae0"/>
+    <token id="0x2adff50" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="22" column="15" str="(" scope="0x2ac70f0" link="0x2adfc50" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="0x2adf110" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="22" column="16" str="struct" scope="0x2ac70f0" type="name"/>
+    <token id="0x2c6e780" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="22" column="16" str="DynlistDescriptor" scope="0x2ac70f0" type="name" astParent="0x2c6e7e0"/>
+    <token id="0x2c6e7e0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="22" column="16" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true" astOperand1="0x2c6e780" astOperand2="0x2adf230"/>
+    <token id="0x2adf230" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="22" column="30" str="handle" scope="0x2ac70f0" type="name" varId="15" exprId="15" variable="0x2c6e6c0" astParent="0x2c6e7e0" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2adfc50" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="22" column="36" str=")" scope="0x2ac70f0" link="0x2adff50"/>
+    <token id="0x2adfcb0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="22" column="37" str=";" scope="0x2ac70f0"/>
+    <token id="0x2adfd10" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="23" column="1" str="void" scope="0x2ac70f0" type="name"/>
+    <token id="0x2adf650" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="23" column="6" str="istack_free" scope="0x2ac70f0" type="name" function="0xaf9be0"/>
+    <token id="0x2adfd70" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="23" column="17" str="(" scope="0x2ac70f0" link="0x2adffb0" valueType-type="void" valueType-reference="None"/>
+    <token id="0x2adf170" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="23" column="18" str="struct" scope="0x2ac70f0" type="name"/>
+    <token id="0x2c6e5a0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="23" column="18" str="DynlistDescriptor" scope="0x2ac70f0" type="name" astParent="0x2c6e840"/>
+    <token id="0x2c6e840" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="23" column="18" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true" astOperand1="0x2c6e5a0" astOperand2="0x2adf470"/>
+    <token id="0x2adf470" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="23" column="32" str="handle" scope="0x2ac70f0" type="name" varId="16" exprId="16" variable="0x2c6ed80" astParent="0x2c6e840" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2adffb0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="23" column="38" str=")" scope="0x2ac70f0" link="0x2adfd70"/>
+    <token id="0x2adf4d0" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" linenr="23" column="39" str=";" scope="0x2ac70f0"/>
+    <token id="0x2adf6b0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="4" column="1" str="static" scope="0x2ac70f0" type="name"/>
+    <token id="0x2adf1d0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="4" column="8" str="void" scope="0x2ac70f0" type="name"/>
+    <token id="0x2adf290" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="4" column="13" str="handle_item_puts" scope="0x2ac70f0" type="name" function="0xaf93c0"/>
+    <token id="0x2adf710" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="4" column="29" str="(" scope="0x2ac70f0" link="0x2c69880" valueType-type="void" valueType-reference="None"/>
+    <token id="0x2c69400" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="4" column="30" str="void" scope="0x2ac70f0" type="name" astParent="0x2c69a60"/>
+    <token id="0x2c69a60" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="4" column="35" str="*" scope="0x2ac70f0" type="op" isArithmeticalOp="true" astOperand1="0x2c69400" astOperand2="0x2c69b20"/>
+    <token id="0x2c69b20" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="4" column="36" str="val" scope="0x2ac70f0" type="name" varId="17" exprId="17" variable="0x2c6e900" astParent="0x2c69a60" valueType-type="void" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2c69880" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="4" column="39" str=")" scope="0x2ac70f0" link="0x2adf710"/>
+    <token id="0x2c69b80" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="4" column="41" str="{" scope="0x2afe820" link="0x2c691c0"/>
+    <token id="0x2c69820" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="5" column="5" str="puts" scope="0x2afe820" type="name" astParent="0x2c69a00"/>
+    <token id="0x2c69a00" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="5" column="9" str="(" scope="0x2afe820" link="0x2c693a0" exprId="1073741843" astOperand1="0x2c69820" astOperand2="0x2c69280" valueType-type="int" valueType-sign="signed" valueType-reference="None" valueType-originalTypeName="int"/>
+    <token id="0x2c69280" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="5" column="10" str="(" scope="0x2afe820" isCast="true" link="0x2c69c40" exprId="1073741844" astParent="0x2c69a00" astOperand1="0x2c69520" valueType-type="char" valueType-pointer="1" valueType-constness="1" valueType-reference="None"/>
+    <token id="0x2c68fe0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="5" column="11" str="const" scope="0x2afe820" type="name"/>
+    <token id="0x2c698e0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="5" column="17" str="char" scope="0x2afe820" type="name"/>
+    <token id="0x2c69760" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="5" column="22" str="*" scope="0x2afe820" type="op" isArithmeticalOp="true" exprId="1073741845"/>
+    <token id="0x2c69c40" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="5" column="23" str=")" scope="0x2afe820" link="0x2c69280"/>
+    <token id="0x2c69520" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="5" column="24" str="val" scope="0x2afe820" type="name" varId="17" exprId="17" variable="0x2c6e900" astParent="0x2c69280" valueType-type="void" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2c693a0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="5" column="27" str=")" scope="0x2afe820" link="0x2c69a00"/>
+    <token id="0x2c69340" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="5" column="28" str=";" scope="0x2afe820"/>
+    <token id="0x2c691c0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="6" column="1" str="}" scope="0x2afe820" link="0x2c69b80"/>
+    <token id="0x2c697c0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="8" column="1" str="int" scope="0x2ac70f0" type="name"/>
+    <token id="0x2c69640" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="8" column="5" str="main" scope="0x2ac70f0" type="name" function="0xaf8f60"/>
+    <token id="0x2c69940" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="8" column="9" str="(" scope="0x2ac70f0" link="0x2c69e80" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="0x2c69e80" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="8" column="10" str=")" scope="0x2ac70f0" link="0x2c69940"/>
+    <token id="0x2c69100" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="8" column="12" str="{" scope="0x2afe9b0" link="0x2c6a110"/>
+    <token id="0x2c696a0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="9" column="5" str="struct" scope="0x2afe9b0" type="name"/>
+    <token id="0x2c6e8a0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="9" column="5" str="DynlistDescriptor" scope="0x2afe9b0" type="name" astParent="0x2c6e480"/>
+    <token id="0x2c6e480" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="9" column="5" str="*" scope="0x2afe9b0" type="op" isArithmeticalOp="true" astOperand1="0x2c6e8a0" astOperand2="0x2c69580"/>
+    <token id="0x2c69580" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="9" column="13" str="list" scope="0x2afe9b0" type="name" varId="18" exprId="18" variable="0x2a9c830" astParent="0x2c6e480" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2c699a0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="9" column="18" str=";" scope="0x2afe9b0" isSplittedVarDeclEq="true"/>
+    <token id="0x2c6a530" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="9" column="13" str="list" scope="0x2afe9b0" type="name" varId="18" exprId="18" variable="0x2a9c830" astParent="0x2c6ab90" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2c6ab90" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="9" column="18" str="=" scope="0x2afe9b0" type="op" isAssignmentOp="true" exprId="1073741846" astOperand1="0x2c6a530" astOperand2="0x2c69ac0" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2c69460" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="9" column="20" str="dynlist_new" scope="0x2afe9b0" type="name" function="0xaf8e20" astParent="0x2c69ac0"/>
+    <token id="0x2c69ac0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="9" column="31" str="(" scope="0x2afe9b0" link="0x2c69160" exprId="1073741847" astParent="0x2c6ab90" astOperand1="0x2c69460" astOperand2="0x2c69be0" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2c69be0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="9" column="32" str="NULL" scope="0x2afe9b0" type="name" values="0x2afc6c0" astParent="0x2c69ac0"/>
+    <token id="0x2c69160" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="9" column="36" str=")" scope="0x2afe9b0" link="0x2c69ac0"/>
+    <token id="0x2c69ee0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="9" column="37" str=";" scope="0x2afe9b0"/>
+    <token id="0x2c69ca0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="10" column="5" str="dynlist_append" scope="0x2afe9b0" type="name" function="0xafa5e0" astParent="0x2c694c0"/>
+    <token id="0x2c694c0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="10" column="19" str="(" scope="0x2afe9b0" link="0x2c69d00" exprId="1073741848" astOperand1="0x2c69ca0" astOperand2="0x2c69d60" valueType-type="void" valueType-reference="None"/>
+    <token id="0x2c695e0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="10" column="20" str="list" scope="0x2afe9b0" type="name" varId="18" exprId="18" variable="0x2a9c830" astParent="0x2c69d60" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2c69d60" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="10" column="24" str="," scope="0x2afe9b0" astParent="0x2c694c0" astOperand1="0x2c695e0" astOperand2="0x2c69700"/>
+    <token id="0x2c69700" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="10" column="26" str="u8&quot;xxxxxxxxxxxx xxxxxxxx!&quot;" scope="0x2afe9b0" type="string" strlen="22" values="0x2afc960" astParent="0x2c69d60" valueType-type="char" valueType-pointer="1" valueType-constness="1" valueType-reference="None"/>
+    <token id="0x2c69d00" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="10" column="52" str=")" scope="0x2afe9b0" link="0x2c694c0"/>
+    <token id="0x2c69220" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="10" column="53" str=";" scope="0x2afe9b0"/>
+    <token id="0x2c69dc0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="11" column="5" str="dynlist_prepend" scope="0x2afe9b0" type="name" function="0xafab80" astParent="0x2c69e20"/>
+    <token id="0x2c69e20" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="11" column="20" str="(" scope="0x2afe9b0" link="0x2c6a770" exprId="1073741849" astOperand1="0x2c69dc0" astOperand2="0x2c690a0" valueType-type="void" valueType-reference="None"/>
+    <token id="0x2c69040" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="11" column="21" str="list" scope="0x2afe9b0" type="name" varId="18" exprId="18" variable="0x2a9c830" astParent="0x2c690a0" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2c690a0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="11" column="25" str="," scope="0x2afe9b0" astParent="0x2c69e20" astOperand1="0x2c69040" astOperand2="0x2c692e0"/>
+    <token id="0x2c692e0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="11" column="26" str="u8&quot;xxxxxxxxxxxx xxxxxxxxxxxxxx: &quot;" scope="0x2afe9b0" type="string" strlen="29" values="0x2afc560" astParent="0x2c690a0" valueType-type="char" valueType-pointer="1" valueType-constness="1" valueType-reference="None"/>
+    <token id="0x2c6a770" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="11" column="59" str=")" scope="0x2afe9b0" link="0x2c69e20"/>
+    <token id="0x2c6a350" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="11" column="60" str=";" scope="0x2afe9b0"/>
+    <token id="0x2c6aa10" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="12" column="5" str="dynlist_foreach" scope="0x2afe9b0" type="name" function="0xaf8ba0" astParent="0x2c6a2f0"/>
+    <token id="0x2c6a2f0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="12" column="20" str="(" scope="0x2afe9b0" link="0x2c6a7d0" exprId="1073741850" astOperand1="0x2c6aa10" astOperand2="0x2c6a3b0" valueType-type="void" valueType-reference="None"/>
+    <token id="0x2c6aa70" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="12" column="21" str="list" scope="0x2afe9b0" type="name" varId="18" exprId="18" variable="0x2a9c830" astParent="0x2c6a3b0" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2c6a3b0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="12" column="25" str="," scope="0x2afe9b0" astParent="0x2c6a2f0" astOperand1="0x2c6aa70" astOperand2="0x2c6acb0"/>
+    <token id="0x2c6acb0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="12" column="27" str="handle_item_puts" scope="0x2afe9b0" type="name" function="0xaf93c0" astParent="0x2c6a3b0"/>
+    <token id="0x2c6a7d0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="12" column="43" str=")" scope="0x2afe9b0" link="0x2c6a2f0"/>
+    <token id="0x2c6a470" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="12" column="44" str=";" scope="0x2afe9b0"/>
+    <token id="0x2c6abf0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="13" column="5" str="dynlist_free" scope="0x2afe9b0" type="name" function="0xaf8c40" astParent="0x2c6a230"/>
+    <token id="0x2c6a230" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="13" column="17" str="(" scope="0x2afe9b0" link="0x2c6a0b0" exprId="1073741851" astOperand1="0x2c6abf0" astOperand2="0x2c6a410" valueType-type="void" valueType-reference="None"/>
+    <token id="0x2c6a410" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="13" column="18" str="list" scope="0x2afe9b0" type="name" varId="18" exprId="18" variable="0x2a9c830" astParent="0x2c6a230" valueType-type="record" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0x2c6a0b0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="13" column="22" str=")" scope="0x2afe9b0" link="0x2c6a230"/>
+    <token id="0x2c6a9b0" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="13" column="23" str=";" scope="0x2afe9b0"/>
+    <token id="0x2c6a110" file="C:/MKBC_ivt_14_m_bulanov/lab1/src/helloworld/helloworld.c" linenr="14" column="1" str="}" scope="0x2afe9b0" link="0x2c69100"/>
+  </tokenlist>
+  <scopes>
+    <scope id="0x2ac70f0" type="Global">
+      <functionList>
+        <function id="0xaf8e20" token="0" tokenDef="0x2ab35e0" name="dynlist_new" type="Function" access="Public">
+          <arg nr="1" variable="0x2c6eba0"/>
+        </function>
+        <function id="0xafa720" token="0" tokenDef="0x2ab3940" name="dynlist_poplast" type="Function" access="Public">
+          <arg nr="1" variable="0x2c6e600"/>
+        </function>
+        <function id="0xaf8c40" token="0" tokenDef="0x2ab32e0" name="dynlist_free" type="Function" access="Public">
+          <arg nr="1" variable="0x2c6e180"/>
+        </function>
+        <function id="0xafa5e0" token="0" tokenDef="0x2ab3e80" name="dynlist_append" type="Function" access="Public">
+          <arg nr="1" variable="0x2afeb30"/>
+          <arg nr="2" variable="0x2afeb88"/>
+        </function>
+        <function id="0xafab80" token="0" tokenDef="0x2ab3400" name="dynlist_prepend" type="Function" access="Public">
+          <arg nr="1" variable="0xabf3c0"/>
+          <arg nr="2" variable="0xabf418"/>
+        </function>
+        <function id="0xaf8ba0" token="0" tokenDef="0x2adb2d0" name="dynlist_foreach" type="Function" access="Public">
+          <arg nr="1" variable="0x2ac7270"/>
+          <arg nr="2" variable="0x2ac72c8"/>
+        </function>
+        <function id="0xafa7c0" token="0" tokenDef="0x2adbed0" name="dynlist_begin" type="Function" access="Public">
+          <arg nr="1" variable="0x2c6ec60"/>
+        </function>
+        <function id="0xafa4a0" token="0" tokenDef="0x2adbd50" name="dynlist_next" type="Function" access="Public">
+          <arg nr="1" variable="0x2c6e660"/>
+        </function>
+        <function id="0xaf95a0" token="0" tokenDef="0x2adb5d0" name="dynlist_value" type="Function" access="Public">
+          <arg nr="1" variable="0x2c6e360"/>
+        </function>
+        <function id="0xaf8740" token="0" tokenDef="0x2adf830" name="istack_new" type="Function" access="Public"/>
+        <function id="0xaf8ec0" token="0" tokenDef="0x2adf3b0" name="istack_push" type="Function" access="Public">
+          <arg nr="1" variable="0x2ac7330"/>
+          <arg nr="2" variable="0x2ac7388"/>
+        </function>
+        <function id="0xafaae0" token="0" tokenDef="0x2adf5f0" name="istack_pop" type="Function" access="Public">
+          <arg nr="1" variable="0x2c6e6c0"/>
+        </function>
+        <function id="0xaf9be0" token="0" tokenDef="0x2adf650" name="istack_free" type="Function" access="Public">
+          <arg nr="1" variable="0x2c6ed80"/>
+        </function>
+        <function id="0xaf93c0" token="0x2adf290" tokenDef="0x2adf290" name="handle_item_puts" type="Function" access="Public" isStatic="true">
+          <arg nr="1" variable="0x2c6e900"/>
+        </function>
+        <function id="0xaf8f60" token="0x2c69640" tokenDef="0x2c69640" name="main" type="Function" access="Public"/>
+      </functionList>
+    </scope>
+    <scope id="0x2afe820" type="Function" className="handle_item_puts" bodyStart="0x2c69b80" bodyEnd="0x2c691c0" nestedIn="0x2ac70f0" function="0xaf93c0"/>
+    <scope id="0x2afe9b0" type="Function" className="main" bodyStart="0x2c69100" bodyEnd="0x2c6a110" nestedIn="0x2ac70f0" function="0xaf8f60">
+      <varlist>
+        <var id="0x2a9c830"/>
+      </varlist>
+    </scope>
+  </scopes>
+  <variables>
+    <var id="0xabf3c0" nameToken="0x2adbe70" typeStartToken="0x2c6a8f0" typeEndToken="0x2c6ae30" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0xabf418" nameToken="0x2adbdb0" typeStartToken="0x2adb7b0" typeEndToken="0x2adb930" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2a9c830" nameToken="0x2c69580" typeStartToken="0x2c6e8a0" typeEndToken="0x2c6e480" access="Local" scope="0x2afe9b0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2ac7270" nameToken="0x2adb6f0" typeStartToken="0x2c6a050" typeEndToken="0x2c6a1d0" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2ac72c8" nameToken="0x2adb990" typeStartToken="0x2adbb10" typeEndToken="0x2ad2bb0" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2ac7330" nameToken="0x2adf410" typeStartToken="0x2c6aef0" typeEndToken="0x2c6ede0" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2ac7388" nameToken="0x2adfbf0" typeStartToken="0x2adf530" typeEndToken="0x2adf530" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="false" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2afeb30" nameToken="0x2ab3f40" typeStartToken="0x2c6a5f0" typeEndToken="0x2c6add0" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2afeb88" nameToken="0x2ab4000" typeStartToken="0x2ab3ca0" typeEndToken="0x2ab3640" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2c6e180" nameToken="0x2ab33a0" typeStartToken="0x2c6ae90" typeEndToken="0x2c6ad70" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2c6e360" nameToken="0x2adf8f0" typeStartToken="0x2adfb90" typeEndToken="0x2adf770" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2c6e600" nameToken="0x2ab3dc0" typeStartToken="0x2c6ac50" typeEndToken="0x2c6ad10" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2c6e660" nameToken="0x2adb4b0" typeStartToken="0x2adb270" typeEndToken="0x2adb450" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2c6e6c0" nameToken="0x2adf230" typeStartToken="0x2c6e780" typeEndToken="0x2c6e7e0" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2c6e900" nameToken="0x2c69b20" typeStartToken="0x2c69400" typeEndToken="0x2c69a60" access="Argument" scope="0x2afe820" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2c6eba0" nameToken="0x2ab3d60" typeStartToken="0x2ab3d00" typeEndToken="0x2c6a830" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2c6ec60" nameToken="0x2adb750" typeStartToken="0x2ab38e0" typeEndToken="0x2ab39a0" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+    <var id="0x2c6ed80" nameToken="0x2adf470" typeStartToken="0x2c6e5a0" typeEndToken="0x2c6e840" access="Argument" scope="0" constness="0" isArray="false" isClass="false" isConst="false" isExtern="false" isPointer="true" isReference="false" isStatic="false" isVolatile="false"/>
+  </variables>
+  <valueflow>
+    <values id="0x2afc6c0">
+      <value intvalue="0" bound="Point" known="true" path="0"/>
+    </values>
+    <values id="0x2afc960">
+      <value tokvalue="0x2c69700" bound="Point" known="true" path="0"/>
+    </values>
+    <values id="0x2afc560">
+      <value tokvalue="0x2c692e0" bound="Point" known="true" path="0"/>
+    </values>
+  </valueflow>
+  <typedef-info>
+    <info name="Dynlist" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" line="7" column="1" used="1"/>
+    <info name="DynlistDescriptor" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" line="5" column="1" used="0"/>
+    <info name="DynlistNode" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" line="6" column="1" used="0"/>
+    <info name="dynlist_pval_func_t" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" line="8" column="1" used="1"/>
+    <info name="istack_handle" file="C:/MKBC_ivt_14_m_bulanov/lab1/lib/dynlist/dynlist.h" line="9" column="1" used="1"/>
+  </typedef-info>
+</dump>
+</dumps>
