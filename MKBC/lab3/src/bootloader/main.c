@@ -11,11 +11,18 @@
 
 extern void HardFault_Handler();
 uint32_t bootloader_SP = 0;
+extern const char* get_last_error(void);
+extern void clear_last_error(void);
+
+typedef struct {
+    uint32_t magic;
+    char message[256];
+} last_error_t;
 
 static const char *gc_help_msg =
-    u8"\n\r┌────────────┬──────────────┬────────────┬────────────┬────────────┬────────┐"
-    u8"\n\r│ 1:BootSRAM │ 2:UsageFault │ 3:BusFault │ 4:MemFault │ 5:assert() │ 6:User │"
-    u8"\n\r└────────────┴──────────────┴────────────┴────────────┴────────────┴────────┘"
+    u8"\n\r┌────────────┬──────────────┬────────────┬────────────┬────────────┬─────────────┐"
+    u8"\n\r│ 1:BootSRAM │ 2:UsageFault │ 3:BusFault │ 4:MemFault │ 5:assert() │ 6:LastError │"
+    u8"\n\r└────────────┴──────────────┴────────────┴────────────┴────────────┴─────────────┘"
     u8"\n\r Выбор [1-6] > ";
 
 static void do_BootSRAM();
@@ -23,12 +30,12 @@ static void do_UsageFault();
 static void do_MemFault();
 static void do_BusFault();
 static void do_Assert();
-static void do_User();
+static void do_LastError();
 
 typedef void (*handler_func_t)();
 
 handler_func_t handlers[NUM_COMMANDS] = {do_BootSRAM, do_UsageFault, do_BusFault,
-                                         do_MemFault, do_Assert,     do_User};
+                                         do_MemFault, do_Assert,     do_LastError};
 
 uint8_t read_handler_index() {
     while (vterm_keypressed() != 0)
@@ -45,6 +52,14 @@ void enable_fault_handlers() {
 // SCB->CCR ....
 // Разрешить генерацию исключений; см. PM0253, п. 4.3.9 на
 // стр. 204 SCB->SHCSR ...
+
+    SCB->CCR |= SCB_CCR_USERSETMPEND_Msk    // разрешить привилегированный доступ к PendSV
+              | SCB_CCR_DIV_0_TRP_Msk;       // деление на ноль -> UsageFault
+
+    // 2) Включить обработку этих исключений в регистре SHCSR
+    SCB->SHCSR |= SCB_SHCSR_USGFAULTENA_Msk
+                | SCB_SHCSR_BUSFAULTENA_Msk
+                | SCB_SHCSR_MEMFAULTENA_Msk;
 }
 
 int main() {
@@ -92,6 +107,12 @@ void do_BootSRAM() {
 void do_UsageFault() {
     // Отслеживаемые ошибки задаются в SCB->UFSR (PM0253.rev5 стр. 209 )
     // Например, деление на ноль, Доступ к невыровненным данным
+
+    printf("Generating UsageFault: division by zero...\n");
+    volatile int a = 1;
+    volatile int b = 0;
+    volatile int c = a / b;    // деление на ноль вызовет UsageFault (если разрешено)
+    (void)c;
 }
 
 void do_MemFault() {
@@ -103,8 +124,19 @@ void do_MemFault() {
 void do_BusFault() {
     // Ошибка доступа к памяти по шине
     // Например, попытка чтения из отсутствующей внешней памяти (0х60000000)
+    printf("Generating BusFault: read from invalid address 0x6b000000...\n");
+    volatile uint32_t *ptr = (uint32_t *)0x6b000000;
+    volatile uint32_t dummy = *ptr;
+    (void)dummy;
 }
 
 void do_Assert() { assert(!"Assertion example"); }
 
-void do_User() { puts(u8"\r\nВнезапно выпал снег\n"); }
+void do_LastError(void) {
+    const char* err = get_last_error();
+    if (err) {
+        printf("\r\nLast error: %s\n", err);
+    } else {
+        printf("\r\nNo errors recorded.\n");
+    }
+}

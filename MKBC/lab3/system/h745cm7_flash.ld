@@ -6,7 +6,7 @@
 **
 **
 **  Abstract    : Linker script for STM32H7 series
-**                256Kbytes RAM_EXEC and 256Kbytes RAM
+**                1024Kbytes FLASH and 192Kbytes RAM
 **
 **                Set heap size, stack size and stack location according
 **                to application requirements.
@@ -35,7 +35,7 @@
 ENTRY(Reset_Handler)
 
 /* Highest address of the user mode stack */
-_estack = 0x24080000;    /* end of RAM */
+_estack = 0x20020000;    /* end of RAM */
 /* Generate a link error if heap and stack don't fit into RAM */
 _Min_Heap_Size = 0x200;      /* required amount of heap  */
 _Min_Stack_Size = 0x400; /* required amount of stack */
@@ -43,22 +43,23 @@ _Min_Stack_Size = 0x400; /* required amount of stack */
 /* Specify the memory areas */
 MEMORY
 {
-RAM_EXEC (rx)      : ORIGIN = 0x24000000, LENGTH = 256K
-RAM (xrw)      : ORIGIN = 0x24040000, LENGTH = 256K
+FLASH (rx)      : ORIGIN = 0x08000000, LENGTH = 1024K
+RAM (xrw)      : ORIGIN = 0x20000000, LENGTH = 128K
+ITCMRAM (xrw)      : ORIGIN = 0x00000000, LENGTH = 64K
 }
 
 /* Define output sections */
 SECTIONS
 {
-  /* The startup code goes first into RAM_EXEC */
+  /* The startup code goes first into FLASH */
   .isr_vector :
   {
     . = ALIGN(4);
     KEEP(*(.isr_vector)) /* Startup code */
     . = ALIGN(4);
-  } >RAM_EXEC
+  } >FLASH
 
-  /* The program code and other data goes into RAM_EXEC */
+  /* The program code and other data goes into FLASH */
   .text :
   {
     . = ALIGN(4);
@@ -73,48 +74,58 @@ SECTIONS
 
     . = ALIGN(4);
     _etext = .;        /* define a global symbols at end of code */
-  } >RAM_EXEC
+  } >FLASH
 
-  /* Constant data goes into RAM_EXEC */
+  /* Constant data goes into FLASH */
   .rodata :
   {
     . = ALIGN(4);
     *(.rodata)         /* .rodata sections (constants, strings, etc.) */
     *(.rodata*)        /* .rodata* sections (constants, strings, etc.) */
     . = ALIGN(4);
-  } >RAM_EXEC
+  } >FLASH
 
   .ARM.extab () : /* The  keyword is only supported in GCC11 and later, remove it if using GCC10 or earlier. */
   {
+    . = ALIGN(4);
     *(.ARM.extab* .gnu.linkonce.armextab.*)
-  } >RAM_EXEC
+    . = ALIGN(4);
+  } >FLASH
   .ARM () : /* The  keyword is only supported in GCC11 and later, remove it if using GCC10 or earlier. */
   {
+    . = ALIGN(4);
     __exidx_start = .;
     *(.ARM.exidx*)
     __exidx_end = .;
-  } >RAM_EXEC
+    . = ALIGN(4);
+  } >FLASH
 
   .preinit_array () : /* The  keyword is only supported in GCC11 and later, remove it if using GCC10 or earlier. */
   {
+    . = ALIGN(4);
     PROVIDE_HIDDEN (__preinit_array_start = .);
     KEEP (*(.preinit_array*))
     PROVIDE_HIDDEN (__preinit_array_end = .);
-  } >RAM_EXEC
+    . = ALIGN(4);
+  } >FLASH
   .init_array () : /* The  keyword is only supported in GCC11 and later, remove it if using GCC10 or earlier. */
   {
+    . = ALIGN(4);
     PROVIDE_HIDDEN (__init_array_start = .);
     KEEP (*(SORT(.init_array.*)))
     KEEP (*(.init_array*))
     PROVIDE_HIDDEN (__init_array_end = .);
-  } >RAM_EXEC
+    . = ALIGN(4);
+  } >FLASH
   .fini_array () : /* The  keyword is only supported in GCC11 and later, remove it if using GCC10 or earlier. */
   {
+    . = ALIGN(4);
     PROVIDE_HIDDEN (__fini_array_start = .);
     KEEP (*(SORT(.fini_array.*)))
     KEEP (*(.fini_array*))
     PROVIDE_HIDDEN (__fini_array_end = .);
-  } >RAM_EXEC
+    . = ALIGN(4);
+  } >FLASH
 
   /* used by the startup to initialize data */
   _sidata = LOADADDR(.data);
@@ -129,7 +140,7 @@ SECTIONS
 
     . = ALIGN(4);
     _edata = .;        /* define a global symbol at data end */
-  } >RAM AT> RAM_EXEC
+  } >RAM AT> FLASH
 
   
   /* Uninitialized data section */
@@ -159,7 +170,15 @@ SECTIONS
     . = ALIGN(8);
   } >RAM
 
-  
+  /* LastError storage, not initialized */
+  .lasterror (NOLOAD) : {
+    . = ALIGN(4);
+    _lasterror_start = .;
+    *(.lasterror)
+    *(.lasterror*)
+    . = ALIGN(4);
+    _lasterror_end = .;
+  } >RAM
 
   /* Remove information from the standard libraries */
   /DISCARD/ :
